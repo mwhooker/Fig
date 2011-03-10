@@ -1,3 +1,76 @@
 Fig is for configuration management.
 
+Introduction
+
 Meant to be deployed within your network, Fig runs on CouchDB.
+TODO: mention something about HA
+
+
+Configuration management is one of the most important components of any web
+application. <TODO: link to that article I sent marcel about shipping trunk>
+
+In general, most applications will be running in multiple environments.
+Development, Testing/Integration, and Production is a common example. This
+scenario is naturally hierarchical, and so Fig organizes TODO ...
+
+Overview
+
+When a user opens Fig, the first thing she'll see is a list of your Projects.
+Each Project is a distinct component of your infrastructure. For example, your
+web application and a backend service may each have different entries in the
+list of Projects.
+
+Clicking into a project will show its Root Settings page.
+
+____________________
+|    |    Groups    |
+| t  |   ________   |
+| r  |  | group1 |  |
+| e  |   ________   |
+| e  |  | group2 |  |
+|    |              |
+|____|______________|
+
+The Groups pane contains logical groupings of parts of your project. For
+example: Database, AB tests, or maybe a very specific piece of logic, i.e.
+Reccomendation Engine.
+
+Each group contains Settings relevant to that Group, which we'll go into later.
+
+
+On the left is the Tree pane, which relates to the hierachy of Environments as
+described above. It looks like this:
+
+_________________
+| Root           |
+|   Development  |
+|     mhooker    |
+|   Integration  |
+|   Production   |
+|________________|
+
+Clicking on any node of the Tree will change which Environment the Settings in
+the Group pane describe.
+
+
+Pages:
+
+    Global Navigation
+        User Admin
+        changelog
+
+    Home
+        
+        Use Cases
+            Navigate to apps quickly and easily
+
+
+
+
+Projects
+Environments
+Groups
+Settings
+Associations
+Users
+ACL
